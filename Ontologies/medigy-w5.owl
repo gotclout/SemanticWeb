@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.servbot.org/2019/medigy/w5#"
+     xml:base="http://www.servbot.org/2019/medigy/w5"
+     xmlns:w5="http://www.servbot.org/2019/medigy/w5#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:fhir="http://www.servbot.org/2019/medigy/hunt/fhir/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.servbot.org/2019/medigy/w5">
+        <rdfs:comment>FHIR W5 categorization is a preliminary classification of the fhir property</rdfs:comment>
+        <rdfs:label>W5 Categorization</rdfs:label>
+        <owl:versionInfo>FHIR W5 categorization (Preliminary)</owl:versionInfo>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#class -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#class">
+        <rdfs:comment>Classifier Field</rdfs:comment>
+        <rdfs:label>class</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#context -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#context">
+        <rdfs:comment>a resource that gives context for the work described in this resource (usually Encounter or EpisodeOfCare)</rdfs:comment>
+        <rdfs:label>context</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#grade -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#grade">
+        <rdfs:comment>A field that indicates the potential impact of the content of the resource</rdfs:comment>
+        <rdfs:label>grade</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#id -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#id">
+        <rdfs:comment>Business Identifier</rdfs:comment>
+        <rdfs:label>id</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#id.version -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#id.version">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#id"/>
+        <rdfs:comment>Identifier for this version</rdfs:comment>
+        <rdfs:label>id.version</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#status -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#status">
+        <rdfs:comment>Status Field</rdfs:comment>
+        <rdfs:label>status</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#what -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#what">
+        <rdfs:comment>what this resource is about</rdfs:comment>
+        <rdfs:label>what</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#when -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when">
+        <rdfs:comment>point in time</rdfs:comment>
+        <rdfs:label>when</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.done -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.done">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when"/>
+        <rdfs:comment>when the work described in this resource was completed (or will be)</rdfs:comment>
+        <rdfs:label>when.done</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.init -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.init">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when"/>
+        <rdfs:comment>when the work described in this resource was started (or will be)</rdfs:comment>
+        <rdfs:label>when.init</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.planned -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.planned">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when"/>
+        <rdfs:comment>when this resource is planned to occur</rdfs:comment>
+        <rdfs:label>when.planned</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.recorded -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when.recorded">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#when"/>
+        <rdfs:comment>when this resource itself was created</rdfs:comment>
+        <rdfs:label>when.recorded</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#where -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#where">
+        <rdfs:comment>The location of the work described</rdfs:comment>
+        <rdfs:label>where</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who">
+        <rdfs:comment>An actor involved in the work described by this resource</rdfs:comment>
+        <rdfs:label>who</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.actor -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.actor">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who"/>
+        <rdfs:comment>who did the work described the resource (or will do)</rdfs:comment>
+        <rdfs:label>who.actor</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.author -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.author">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who"/>
+        <rdfs:comment>who authored the content of the resource</rdfs:comment>
+        <rdfs:label>who.author</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.cause">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who"/>
+        <rdfs:comment>who prompted the work described in the resource</rdfs:comment>
+        <rdfs:label>who.cause</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.focus -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.focus">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who"/>
+        <rdfs:comment>Who this resource is about</rdfs:comment>
+        <rdfs:label>who.focus</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.source -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.source">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who"/>
+        <rdfs:comment>Who provided the information in this resource</rdfs:comment>
+        <rdfs:label>who.source</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.witness -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who.witness">
+        <rdfs:subPropertyOf rdf:resource="http://www.servbot.org/2019/medigy/hunt/fhir/w5#who"/>
+        <rdfs:comment>who attests to the content of the resource (individual or org)</rdfs:comment>
+        <rdfs:label>who.witness</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#why -->
+
+    <owl:ObjectProperty rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#why">
+        <rdfs:comment>Why this work was done</rdfs:comment>
+        <rdfs:label>why</rdfs:label>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.device -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.device">
+        <rdfs:label>device</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.entity -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.entity">
+        <rdfs:label>entity</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.group -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.group">
+        <rdfs:label>group</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.individual -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#administrative.individual">
+        <rdfs:label>individual</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.careprovision -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.careprovision">
+        <rdfs:label>careprovision</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.diagnostics -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.diagnostics">
+        <rdfs:label>diagnostics</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.general -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.general">
+        <rdfs:label>general</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.medication -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#clinical.medication">
+        <rdfs:label>medication</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.behavior -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.behavior">
+        <rdfs:label>behavior</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.content -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.content">
+        <rdfs:label>content</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.misc -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.misc">
+        <rdfs:label>misc</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.terminology -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#conformance.terminology">
+        <rdfs:label>terminology</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.billing -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.billing">
+        <rdfs:label>billing</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.other -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.other">
+        <rdfs:label>other</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.payment -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.payment">
+        <rdfs:label>payment</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.support -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#financial.support">
+        <rdfs:label>support</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.documents -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.documents">
+        <rdfs:label>documents</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.exchange -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.exchange">
+        <rdfs:label>exchange</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.information -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.information">
+        <rdfs:label>information</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.structure -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#infrastructure.structure">
+        <rdfs:label>structure</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#workflow.encounter -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#workflow.encounter">
+        <rdfs:label>encounter</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#workflow.order -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#workflow.order">
+        <rdfs:label>order</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.servbot.org/2019/medigy/hunt/fhir/w5#workflow.scheduling -->
+
+    <owl:Class rdf:about="http://www.servbot.org/2019/medigy/hunt/fhir/w5#workflow.scheduling">
+        <rdfs:label>scheduling</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
